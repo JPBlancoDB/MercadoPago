@@ -1,0 +1,19 @@
+{
+    "name": "jpblancodb/mercadopago",
+    "description": "MercadoPago SDK for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JP Blanco",
+            "email": "jpblancodb@gmail.com"
+        }
+    ],
+    "require": {
+        "mercadopago/sdk": "0.5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "JPBlancoDB\\MercadoPago\\": "src/"
+        }
+    }
+}
