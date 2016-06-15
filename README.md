@@ -19,7 +19,27 @@
   
   e) agregar en el .env:
   
-  MP_CLIENT=
-  MP_SECRET=
+    MP_CLIENT=
+    MP_SECRET=
+    
+2) Ejemplo de uso:
+
+  Usar el facade "MercadoPago":
+
+        $preference_data = array(
+            "items" => array(
+                array(
+                    "title" => "Title of what you are paying for",
+                    "currency_id" => "ARS",
+                    "category_id" => "Category",
+                    "quantity" => 1,
+                    "unit_price" => 10.2
+                )
+            )
+        );
+        
+        $preference = MercadoPago::create_preference($preference_data);
+        
+      
   
   
